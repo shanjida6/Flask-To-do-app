@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+</head>
+<body>
+ 
+ <h3>Login:</h3>
+            <!-- Authenticate a new user-->
+    <form action="{{ url_for('new_User') }}" method="post">
+      <input type="text" name="new_User" placeholder="Enter username" />
+      <input type="submit" value="Log In" />
+    </form>
+
+                   <!-- Adding a new item -->
+     <form action="{{ url_for('new_item') }}" method="post">
+     <input type="text" name="new_item" placeholder="Enter new item" />
+     <input type="submit" value="Add item" />
+     </form>
+
+              <!-- See all Items buttons -->
+     <form action="{{ url_for('all_items') }}">
+     <input type="submit" value="See all items" style="height:200px; width:200px"/>
+     </form>
+
+              <!-- Change item buttons -->
+     <form action="{{ url_for('change_item') }}" method="post">
+      <input type="text" name="itemID" placeholder="Enter item ID" />
+     <input type="text" name="newItem" placeholder="Enter new item" />
+     <input type="submit" value="Change Item" />
+     </form>
+
+              <!-- Delete item button -->
+      <form action="{{ url_for('delete_item') }}" method="post">
+      <input type="text" name="itemID" placeholder="Enter item ID" />
+      <input type="submit" value="Delete Item" />
+      </form>
+      <br />
+
+            <!-- mark item button -->
+     <br />
+    <form action="{{ url_for('complete_item') }}" method="post">
+      <input type="text" name="itemID" placeholder="Enter item ID" />
+      <input type="submit" value="Mark Item As Completed" />
+    </form>
+    <br />
+
+               <!-- Back to home button 
+    <form action="{{ url_for('index') }}">
+    <input type="submit" value="Back to home" style="height:200px; width:200px"/>
+    </form>
+    <br/> 
+    -->
+
+              <!-- logout button -->
+    <form action="{{ url_for('logout') }}">
+    <input type="submit" value="Logout" style="height:200px; width:200px" />
+    </form>
+
+
+    </form>
+
+</html> 
