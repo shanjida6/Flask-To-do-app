@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register</title>
+</head>
+<body>
+ 
+ <h3>Register:</h3>
+    <form action="{{ url_for('authenticate_User) }}" method="post">
+      <label for="">Username: </label>
+      <input type="text" name="authenticate_User" placeholder="Enter a new user" />
+      <input type="submit" value="Add User" />
+    </form>
+    <br/> 
+
+
+      <form action="{{ url_for('index') }}">
+      <input type="submit" value="Back to home" style="height:100px; width:100px" />
+      </form>
+      <br/> 
+  </body>
+</html>
