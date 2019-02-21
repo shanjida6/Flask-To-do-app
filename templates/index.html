@@ -1,44 +1,6 @@
 <!DOCTYPE html> 
 <html>
-	<head>
-		<title> Shanjida Akhter's Home Page </title>
-	</head>
-
-	<body>
-
-		<header> 
-
-			<center><h1> Welcome to Shanjida Akhter's Profile </h1></center>
-		</header>
-		<center><img src="https://stickershop.line-scdn.net/stickershop/v1/product/1375013/LINEStorePC/main.png;compress=true"></center>
-
-		<center>
-			<p>My name is Shanjida Akhter. I am an under graduate student at Hunter college, studying <a href ="http://www.hunter.cuny.edu/csci">computer science </a> as my major and <a href= "http://www.hunter.cuny.edu/sociology">sociology</a> as my minor. On my free time, I enjoy the following: 
-		</center>
-
-						<!-- Your profile description -->
-			<ol> 
-				<li> Going to museums and art galleries </li>
-				<li> Drinking <a href="http://www.vivibubbletea.com/">bubble tea </a></li>
-				<li> Spending time with my family </li>
-				<li> Trying out new <a href="https://www.townandcountrymag.com/leisure/g14380954/best-desserts-in-nyc/">dessert places</a> in the city </li>
-				<li> Learning new <a href="https://www.livescience.com/technology"> technologies </a> </li>
-			</ol>
-			</p>
-
-					<!-- Turning data.json into list -->
-
-		<h2>list</h2> 
-
-			{% for todo in todos %}
-			<li>
-			    {% if todo.completed == true %}
-			    <strike>{{todo.name}}</strike>
-			    {% else %}
-			    {{todo.name}}
-			    {% endif %}
-			</li>
-			{% endfor %} 
+	<body> 
 
 				<!-- Buttons -->
 				<br/> 
